@@ -1,0 +1,42 @@
+
+lista_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(lista_numeros)
+
+#Crear elemento
+lista_numeros.append(11)
+lista_numeros.insert(0, 200)
+print(lista_numeros)
+
+#Actualizamos un elemento
+lista_numeros[9] = 500
+print(lista_numeros)
+
+#Borramos un número de la lista por posición
+del lista_numeros[0]
+print(lista_numeros)
+
+#Borramos un elemento de la lista por caracter
+lista_numeros.remove(5)
+print(lista_numeros)
+
+#Slide con listas, en este caso va a imprimir desde la posición 0 hasta la 6 con un intervalo de 2
+print(lista_numeros[0:6:2])
+
+#Lista de tuplas
+lista_tuplas = [(1, 2), (3,4), (5,6)]
+print(lista_tuplas[0] [0])
+
+#Lista matriz
+lista_matriz = [[1, 2], [3, 4], [5, 6]]
+print(lista_matriz[2] [1])
+
+#Recorrido de una lista
+lista_nombres = ["Juan", "Pedro", "Maria", "Jose"]
+for nombre in lista_nombres:
+    print(nombre)
+    for letra in nombre:
+        print(letra, end=" - ")
+        
+nombre = input("ingrese su nombre: ")
+lista_nombres.insert(0, nombre)
+print(lista_nombres)
