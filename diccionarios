@@ -1,0 +1,83 @@
+
+persona = {
+    "nombre": "Juan",
+    "edad": 30,
+    "ciudad": "Bogotá",
+    "profesion": "Ingeniero",
+    "lenguajes": ["Python", "JavaScript", "C++"],
+    "correo": {
+        "gmail": "JuanitoKiller@gmail.com",
+        "outlook": "juanitoelperro@gmail.com"
+    }
+}
+
+persona_2 = {
+    "nombre": "Pedro",
+    "edad": 25,
+    "ciudad": "Bogotá",
+    "profesion": "Ingeniero",
+    "lenguajes": ["Python", "JavaScript", "C++"],
+    "correo": {
+        "gmail": "PedritoKiller@gmail.com",
+        "outlook": "pedritotoelperro@gmail.com"
+    }
+}
+
+personas = [persona,persona_2]
+
+#Imprimimos toda la persona
+print(persona)
+
+#Accedemos a la edad
+print(persona["edad"])
+
+#Agregar atributo (clave) con un valor
+persona["telefono"] = "3118202131"
+print(persona)
+
+#Vamos a imprimir la lista de lenguajes
+print(persona["lenguajes"])
+print(persona["lenguajes"] [0])
+
+#imprimimos el diccionario correo que esta dentro del diccionario persona
+print(persona["correo"])
+
+#Como lo podemos mutar podemos modificar valores
+persona_2["ciudad"] = "Medellín"
+print(persona_2["ciudad"])
+
+#Tambien podemos eliminar claves
+del persona["profesion"]
+print(persona)
+
+#Podemos hacer estructuras de datos más complejas
+diccionario = {
+    123:{
+        "nombre": "Roberto",
+        "edad": 23,
+        "ciudad": "Madrid"
+    },
+    
+    678:{
+        "nombre": "Maria",
+        "edad": 43,
+        "ciudad": "Barcelona"
+    }
+}
+
+print(diccionario[123])
+
+#Recorrido de un diccionario
+nombre, apellido = "jhon", "mendez"
+print(nombre, apellido)
+
+paciente = {
+    "nombre": "jhon",
+    "edad": 30,
+    "ciudad": "Orilandia"
+}
+
+print(paciente.items())
+
+for clave, valor in paciente.items():
+    print(clave, "--->", valor)
