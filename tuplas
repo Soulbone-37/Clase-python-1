@@ -1,0 +1,30 @@
+
+#cremos una tupla con los números del 1 al 10
+tupla_numeros = (1,2,3,4,5,6,7,8,9,10)
+
+#Imprimimos la tupla desde l posición 6 con un incremento de 1
+print(tupla_numeros[0:6:1])
+#Imprimimos la posición 0 de la tupla
+print(tupla_numeros[0])
+#Imprimimos toda la tupla pero con un incremento de 2
+print(tupla_numeros[0::2])
+#Imprimimos la tupla al revés
+print(tupla_numeros[::-1])
+
+#Operamos con las tuplas
+tupla_1 = (1, 2, 3)
+tupla_2 = (4, 5, 6)
+tupla_3 = (tupla_1 + tupla_2)
+print(tupla_3)
+numero = 0
+tupla_4 = (numero, 1, 2, 3)
+print(tupla_4)
+
+#Hacemos una tupla con nombres
+tupla_nombres = ("Juan", "Pedro", "Maria", "Jose")
+
+#Hacemos un ciclo for para imprimir la tupla anterior
+for nombre in tupla_nombres:
+    for letra in nombre:
+        if letra == "a":
+            print(nombre)
